@@ -11,7 +11,7 @@ function showPage() {
   document.getElementById("footer").style.display = "flex";
 }
 
-particlesJS.load('particles-js', 'particles.json', function () { });
+particlesJS.load('particles-js', 'particles.json', function () {});
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -72,15 +72,15 @@ var typed = new Typed('#typed', {
   // loopCount: Infinity,
   // backDelay: 1000,
 });
-$(".button-info").click(function(){
+$(".button-info").click(function () {
   $("#typed").html("Thay mặt tất cả học sinh, cảm ơn các thầy cô vì đã mang lại <br> những giờ học bổ ích và thắp lên ngọn lửa tri thức cho nhân loại<br><blockquote><p>Nghề dạy học là nghề cao quý nhất trong những nghề cao quý, <br> nghề sáng tạo nhất trong những nghề sáng tạo<br> vì nó đã sáng tạo ra những con người sáng tạo</p></blockquote>");
-  });
+});
 $('.f-building').click(
-  function () {
-    $('.intro, .c_building, .a_building, .b_building, .e_building').hide();
-    $('.f_building').show();
-  }
-),
+    function () {
+      $('.intro, .c_building, .a_building, .b_building, .e_building').hide();
+      $('.f_building').show();
+    }
+  ),
 
 
   $('.c-building').click(

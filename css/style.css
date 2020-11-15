@@ -145,21 +145,21 @@
 }
 
 @keyframes outerRotate1 {
-    0% {
+    from {
         transform: translate(-50%, -50%) rotate(0);
     }
 
-    100% {
+    to {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
 
 @keyframes outerRotate2 {
-    0% {
+    from {
         transform: translate(-50%, -50%) rotate(0);
     }
 
-    100% {
+    to {
         transform: translate(-50%, -50%) rotate(-360deg);
     }
 }
@@ -292,10 +292,9 @@ article.card {
 }
 
 .button-info {
-
-position:absolute;
-right:0px;
-bottom:0px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }
 
 .in {
