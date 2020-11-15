@@ -6,6 +6,7 @@
   <meta name="viewport" content="initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta property="og:image" content="https://iconclub.github.io/assets/iconLogo.png">
+  <meta property="og:description" content="Thiệp chúc mừng ngày nhà giáo Việt Nam - by DMN">
   <title>Teacher day card</title>
   <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -14,6 +15,8 @@
   <link rel="stylesheet" href="css/mdb.min.css">
   <link rel="stylesheet" href="css/paper.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
 <body onload="change()">
@@ -32,17 +35,18 @@
     </div>
   </div>
   <div id="particles-js" style="visibility:hidden;"></div>
-  <div class="center mt-0 mt-md-4 animate-bottom" id="mainBody" style="display:none;">
+  <div class="center mt-0 mt-md-4 animate-bottom rounded mb-0" id="mainBody" style="display:none;">
     <article class="card">
-      <div class="cover border border-3 border-primary" onclick="playAudioOpen()">
+      <div class="front cover border-primary sunny-morning-gradient" onclick="playAudioOpen()">
         <span id="typed" style="white-space:pre"></span>
+        <button onclick="event.stopPropagation()" class="button-info" data-toggle="tooltip" data-placement="right" title="Gửi tới các thầy cô"><i class="fas fa-info"></i></button>
       </div>
       <div class="inner">
         <nav class="header-bar">
           <button class="align-self-start btn-small close-card" onclick="playAudioClose()"><i
               class="icon fas fa-times-circle"></i></button>
         </nav>
-        <span class="intro">Click on each building: A,B,C,E,F</span>
+        <span class="intro"><img src="img/card_intro.gif" class="rounded mx-auto d-block"></span>
 
         <div class="view e_building hidden-reveal"><img src="img/e_img.jpg" class="rounded mx-auto d-block">
           <div class="mask flex-center rgba-black-strong">
@@ -58,11 +62,11 @@
         <div class="view a_building hidden-reveal"><img src="img/a_img.jpg" class="rounded mx-auto d-block">
           <div class="mask flex-center rgba-black-strong">
             <p class="white-text">Cảm ơn thầy Lê Vinh Danh đã tài trợ cho em để em có cơ hội để đại diện
-              trường thi đấu với các trường đại học trên thế giới</p>
+              trường thi đấu với các trường đại học trên thế giới trong cuộc thi WUDC 2020 đầu năm nay.</p>
           </div>
         </div>
 
-        <div class="view c_building hidden-reveal"><img src="img/TDT_chuan.jpg" class="rounded mx-auto d-block">
+        <div class="view c_building hidden-reveal"><img src="img/c_img.jpg" class="rounded mx-auto d-block">
           <div class="mask flex-center rgba-black-strong">
             <p class="white-text">Thanks to Mr. Jitu for your detailed explaination to every topic, it help me truly
               understand it. Cảm ơn thầy Nguyễn Khánh Tùng cũng đã chậm rãi và cẩn thận khi thầy dạy toán, nếu thầy có
@@ -72,17 +76,17 @@
           </div>
         </div>
 
-        <div class="view b_building hidden-reveal"><img src="img/TDT_chuan.jpg" class="rounded mx-auto d-block">
+        <div class="view b_building hidden-reveal"><img src="img/b_img.jpg" class="rounded mx-auto d-block">
           <div class="mask flex-center rgba-black-strong">
             <p class="white-text">Cảm ơn các thầy cô trong khoa dạy em các môn tư tưởng, chính trị vì đã có cố gắng để
-              làm cho các môn học trở nên thú vị hơn</p>
+              làm cho các môn học trở nên thú vị hơn.</p>
           </div>
         </div>
 
         <div class="view f_building hidden-reveal"><img src="img/f_img.jpg" class="rounded mx-auto d-block">
           <div class="mask flex-center rgba-black-strong">
             <p class="white-text">Cảm ơn các thầy cô dạy tiếng anh năm 1 của em vì những giờ học rất bổ ích và thực sự
-              khác lạ với việc học tiếng anh trong quá khứ</p>
+              khác lạ với việc học tiếng anh trong quá khứ.</p>
           </div>
         </div>
 

@@ -1,7 +1,7 @@
 var transitionToCard;
 
 function change() {
-  transitionToCard = setTimeout(showPage, 2000);
+  transitionToCard = setTimeout(showPage, 500);
 }
 
 function showPage() {
@@ -13,6 +13,9 @@ function showPage() {
 
 particlesJS.load('particles-js', 'particles.json', function () { });
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
 function playAudioOpen() {
   setTimeout(function () {
@@ -26,7 +29,7 @@ function playAudioClose() {
   }, 1050)
 }
 
-(function (jq, doc, win) {
+(function (doc) {
 
   handleClickOnExitButton = function (e) {
     parentCard = $(e.currentTarget).parents('article.card');
@@ -51,25 +54,27 @@ function playAudioClose() {
 
   $(doc).ready(init);
 
-}($, document, window))
+}(document))
 
 var typeLoad = new Typed('#typeLoad', {
   strings: ['<span style="color:#0067ac; font-weight:bold;">T</span><span style="color:#de412e; font-weight:bold;">D</span><span style="color:#0067ac; font-weight:bold;">T</span>'],
-  typeSpeed: 140,
+  typeSpeed: 40,
   showCursor: false,
 });
 
 var typed = new Typed('#typed', {
-  strings: ['🌹Một bông hồng em dành tặng cô🌹<br>🎶Một bài ca hát riêng tặng thầy🎶<br>🎁Những món quà bé nhỏ đơn sơ🎁<br>❤️Nhưng chứa chan niềm kính yêu vô bờ❤️<br><br><br>Chúc mừng ngày nhà giáo Việt Nam 20/11', 'Click on me!'],
-  startDelay: 2100,
-  typeSpeed: 40,
+  strings: ['🌹Một bông hồng em dành tặng cô🌹<br>🎶Một bài ca hát riêng tặng thầy🎶<br>🎁Những món quà bé nhỏ đơn sơ🎁<br>❤️Nhưng chứa chan niềm kính yêu vô bờ❤️<br><br><br>Chúc mừng ngày nhà giáo Việt Nam 20/11'],
+  startDelay: 510,
+  typeSpeed: 45,
   showCursor: false,
   backSpeed: 50,
   // loop: true,
   // loopCount: Infinity,
   // backDelay: 1000,
 });
-
+$(".button-info").click(function(){
+  $("#typed").html("Thay mặt tất cả học sinh, cảm ơn các thầy cô vì đã mang lại <br> những giờ học bổ ích và thắp lên ngọn lửa tri thức cho nhân loại<br><blockquote><p>Nghề dạy học là nghề cao quý nhất trong những nghề cao quý, <br> nghề sáng tạo nhất trong những nghề sáng tạo<br> vì nó đã sáng tạo ra những con người sáng tạo</p></blockquote>");
+  });
 $('.f-building').click(
   function () {
     $('.intro, .c_building, .a_building, .b_building, .e_building').hide();
