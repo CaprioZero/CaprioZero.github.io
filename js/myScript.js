@@ -63,11 +63,11 @@ var typeLoad = new Typed('#typeLoad', {
 });
 
 var typed = new Typed('#typed', {
-  strings: ['🌹Một bông hồng em dành tặng cô🌹<br>🎶Một bài ca hát riêng tặng thầy🎶<br>🎁Những món quà bé nhỏ đơn sơ🎁<br>❤️Nhưng chứa chan niềm kính yêu vô bờ❤️<br><br><br>Chúc mừng ngày nhà giáo Việt Nam 20/11'],
+  strings: ['🌹Một bông hồng em dành tặng cô🌹<br>🎶Một bài ca hát riêng tặng thầy🎶<br>🎁Những món quà bé nhỏ đơn sơ🎁<br>❤️Nhưng chứa chan niềm kính yêu vô bờ❤️<br><br><br>Chúc mừng ngày nhà giáo Việt Nam 20/11','Click on me'],
   startDelay: 510,
   typeSpeed: 45,
   showCursor: false,
-  backSpeed: 50,
+  backSpeed: 40,
   // loop: true,
   // loopCount: Infinity,
   // backDelay: 1000,
