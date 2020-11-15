@@ -72,9 +72,11 @@ var typed = new Typed('#typed', {
   // loopCount: Infinity,
   // backDelay: 1000,
 });
+
 $(".button-info").click(function () {
   $("#typed").html("Thay mặt tất cả học sinh, cảm ơn các thầy cô vì đã mang lại <br> những giờ học bổ ích và thắp lên ngọn lửa tri thức cho nhân loại<br><blockquote><p>Nghề dạy học là nghề cao quý nhất trong những nghề cao quý, <br> nghề sáng tạo nhất trong những nghề sáng tạo<br> vì nó đã sáng tạo ra những con người sáng tạo</p></blockquote>");
 });
+
 $('.f-building').click(
     function () {
       $('.intro, .c_building, .a_building, .b_building, .e_building').hide();
@@ -82,14 +84,12 @@ $('.f-building').click(
     }
   ),
 
-
   $('.c-building').click(
     function () {
       $('.intro, .f_building, .a_building, .b_building, .e_building').hide();
       $('.c_building').show();
     }
   ),
-
 
   $('.a-building').click(
     function () {
